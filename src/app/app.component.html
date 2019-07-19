@@ -2,7 +2,7 @@
     <mat-sidenav  
     #drawer  
     [opened]="!small"  
-    class="sidenav mat-elevation-z8"
+    class="sidenav"
     fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" >
@@ -35,7 +35,7 @@
          </button>  
       </mat-toolbar>
       <div class="example-container">
-        
+
       </div>
        <router-outlet></router-outlet> 
     </mat-sidenav-content>
