@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatToolbarModule, MatSidenavModule, MatMenuModule, MatListModule, MatIconModule, MatCheckboxModule, MatSnackBarModule, MatTableModule, MatInputModule, MatFormFieldModule, MatBadgeModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import {TableModule} from 'primeng/table';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { LayoutModule } from '@angular/cdk/layout';
         path: '',
         component: PendingApprovalsComponent
       }
-    ])
+    ]),
+    TableModule
      
   ],
   providers: [],

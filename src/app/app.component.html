@@ -30,13 +30,14 @@
         
         <span class="example-fill-remaining-space"></span>  
       <span class="example-fill-remaining-space"></span>  
-        <button mat-icon-button color="primary">
+        <button mat-icon-button (click)="dashboard()" color="primary">
           <mat-icon>dashboard</mat-icon>
          </button>  
       </mat-toolbar>
-      <div class="example-container">
-
-      </div>
-       <router-outlet></router-outlet> 
+        <div *ngIf="isClicked" class="row example-container">
+  
+        </div>
+          <router-outlet></router-outlet> 
+          
     </mat-sidenav-content>
   </mat-sidenav-container>
